@@ -1,0 +1,10 @@
+Please follow these instructions for windows:
+java -jar antlr-4.7-complete.jar
+SET CLASSPATH=.;antlr-4.7-complete.jar;%CLASSPATH%
+doskey antlr4=java org.antlr.v4.Tool $*
+doskey grun =java org.antlr.v4.gui.TestRig $*
+antlr4 g.g4
+javac g*.java
+grun g program sample_code -gui
+
+
