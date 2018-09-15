@@ -23,7 +23,8 @@ if (a[i] < x){
 x = a[i];
 k = i;
 }
+i=i+1;
+}
 return k;
 }
-}
-}
+
